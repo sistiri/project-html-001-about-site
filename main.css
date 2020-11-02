@@ -1,0 +1,134 @@
+
+@import url(<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">)
+
+
+body {
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(50, 50, 50);
+    height: 4em;
+    line-height: 1em;
+    color: white;
+    overflow: hidden;
+    padding-left: 1em;
+}
+
+header h3 {
+    margin: 0;
+    padding: 1.5em;
+    color: white;
+}
+
+#topnav {
+    padding-left: 2em;
+}
+
+#topnav ul {
+list-style-type: none;
+}
+
+#topnav ul li{
+    display: inline-block;
+}
+
+section {
+    padding: 1em 2em;
+    background-color: rgb(200, 200, 200);
+    border: solid 1px white
+    }
+.img-container img{
+    width: 38%;
+    margin: 5%;
+}
+
+.behaviour-box {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 1px;
+    background-color: white;
+    text-align: center;
+    height: 5em;
+    font-size: 2em;
+    border-radius: 3px;
+    border: solid 1px white;
+    box-shadow: 0 0 3px black;
+
+}
+
+/*Works page*/
+
+#works-section article{
+    border-bottom: solid 2px white;
+    margin-bottom: 2em;
+}
+
+#works-section article img {
+    width: 25%;
+    margin-right: 2%;
+}
+#works-section article .right-content {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 768px)  {
+    #works-section article img {
+        width: 100%;
+    }
+    #works-section article .right-content {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+/* Gallery page */
+
+.gallery-container img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* About page */
+
+.side-image img {
+        width: 100%;
+}
+
+
+
+}
+/* Tablet view */
+@media screen and (min-width: 768px) and (max-width: 967px) {
+    .behaviour-box {
+        width: 45%;
+    }
+    .gallery-container img {
+        width: 47%;
+    }  
+    .side-image img {
+        width: 25%;
+    }
+    
+}
+
+/* PC view */
+@media screen and (min-width: 968px) {
+    .behaviour-box {
+        width: 33%;
+    }
+    .gallery-container img {
+        width: 30%;
+        margin: 1px;
+    }
+    .side-image img {
+        width: 25%;
+    }
+}
